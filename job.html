@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naukari Job Portal</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    /* Navigation Styles */
+    nav {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+
+
+    }
+   .navbar a{
+     text-decoration: none;
+
+   }
+    .nav-list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+
+    }
+    .nav-list a{
+      text-decoration: none;
+
+
+    }
+
+    .nav-item {
+      margin-right: 15px;
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .dropdown-content {
+
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      width: 620px;
+    }
+
+    .dropdown-content a {
+      color: #343a40;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-section {
+      float:left;
+      padding: 5px;
+      border-left: 1px solid #ccc;
+      width: 23%;
+    }
+    .dropdown-link {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 8px 0;
+    }
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .nav-list {
+        flex-direction: row;
+      }
+
+      .nav-item {
+        margin-right: 0;
+        margin-bottom: 0px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="container">
+    <div class="navbar">
+      <!-- Logo -->
+      <a href="#">Naukari</a>
+
+
+
+
+      <!-- Navigation Links -->
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Jobs</a></li>
+        <li class="nav-item"><a href="#">Post a Job</a></li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">More</a>
+            <div class="dropdown-content">
+              <a href="#">Companies</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Search Bar -->
+        <li class="nav-item">
+          <form class="form-inline">
+            <input type="search" placeholder="Search Jobs">
+            <button type="submit">Search</button>
+          </form>
+        </li>
+        <li class="nav-item"><a href="#">Login</a></li>
+        <li class="nav-item"><a href="#">Register</a></li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">For employers</a>
+            <div class="dropdown-content">
+              <a href="#">Buy online</a>
+              <a href="#">Naukri Hiring Suite</a>
+              <a href="#">Employer Login</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Your content goes here -->
+
+<script>
+  // Add your JavaScript code here if needed
+</script>
+
+</body>
+</html>
